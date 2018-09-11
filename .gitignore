@@ -1,3 +1,8 @@
 # visualization files and compiled solutions
 *.dat
 *.vtk
+*.csv
+
+# also in the respective subdirectories
+processed/*.vtk
+time/*.dat
