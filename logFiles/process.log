@@ -38,7 +38,7 @@
 -------------------------------------------------------------------------
 
 ------------------------ Physical Case Definition -----------------------
-Input mesh file name: referenceGrid.su2
+Input mesh file name: referenceGrid_p4.su2
 
 -------------------------- Output Information ---------------------------
 The output file format is Paraview ASCII legacy (.vtk).
@@ -63,11 +63,21 @@ Creating standard volume elements.
 Creating face information.
 
 ------------------------- Solution Postprocessing -----------------------
+Writing the volume solution for time step 0.
+Merging connectivities in the Master node.
+Merging solution in the Master node.
+Writing Paraview ASCII file (volume grid).
+Writing Paraview ASCII file (surface grid).
+Writing the volume solution for time step 1.
+Merging connectivities in the Master node.
+Merging solution in the Master node.
+Writing Paraview ASCII file (volume grid).
+Writing Paraview ASCII file (surface grid).
 
 
-Error in "void CBaselineSolver_FEM::SetOutputVariables(CGeometry*, CConfig*)": 
+Error in "void CSolver::Read_SU2_Restart_Binary(CGeometry*, CConfig*, std::__cxx11::string)": 
 -------------------------------------------------------------------------
-Unable to open SU2 restart file time/restart_flow_00000.dat
+Error reading restart file.
 ------------------------------ Error Exit -------------------------------
 
 

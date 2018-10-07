@@ -4,16 +4,18 @@
 cfgFile="testingChan.cfg"
 
 # own SU2_CFD directory with executable
-ownSU2_CFD=$HOME"/madLabSU2/ownSU2facility/Exec/bin//SU2_CFD"
+ownSU2_CFD=$HOME"/madLabSU2/ownSU2facility/SU2/SU2_CFD/bin/SU2_CFD"
 
 # own SU2_SOL directory with executable
-ownSU2_SOL=$HOME"/madLabSU2/ownSU2facility/Exec/bin/SU2_SOL"
+ownSU2_SOL=$HOME"/madLabSU2/ownSU2facility/SU2/SU2_SOL/bin/SU2_SOL"
 
 # create folder directories for runtime, postprocessing and logging
 mkdir "time" "processed" "logFiles"
 
 # start solver
 $ownSU2_CFD $cfgFile >& logFiles/run.log &
+
+sleep 2
 
 # post-process solution
 $ownSU2_SOL $cfgFile >& logFiles/process.log &
