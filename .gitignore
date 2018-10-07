@@ -6,3 +6,4 @@
 # also in the respective subdirectories
 processed/*.vtk
 time/*.dat
+logFiles/*.log
